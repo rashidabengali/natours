@@ -35,9 +35,9 @@ When the browser parses html, it also finds the stylesheets included in the html
 The parsing of CSS is a bit complex. Follows two main steps:
 
 1. Resolving Confilicting CSS Declarations (cascade)
-- cascade is the process that is used to resolve conflict
+    - cascade is the process that is used to resolve conflict
 2. Process final CSS values
-- Like converting margin unit from percentage to pixels
+    - Like converting margin unit from percentage to pixels
 
 The final CSS is also stored in a tree-like structure known as CSS Object Model (CSSOM) like DOM. In order to have html and css parsed ans stored. In order to render page, the browser uses the **visual formatiing model** like box-model (floats, positioning).
 
@@ -59,20 +59,20 @@ Thus the cascade combines all the CSS declarations coming from different sources
 #### How the Cascade resolves confilct when more than one rule applies
 - Importance (weight)
 
-* `!important` keyword overwrites (User)
-* `!important` keyword overwrites (Author)
-* Author declarations
-* User declarations
-* Default browser declarations
+    * `!important` keyword overwrites (User)
+    * `!important` keyword overwrites (Author)
+    * Author declarations
+    * User declarations
+    * Default browser declarations
 
 - Specificity (thus deciding which one takes presidence)
 
-* Inline styles
-* IDs
-* Classes, pseudo-classes, attribute
-* Elements, pseudo-elements
+    * Inline styles
+    * IDs
+    * Classes, pseudo-classes, attribute
+    * Elements, pseudo-elements
 
 ![specificity example](./img/css.png)
 
 - Source Order
-- The last declaration in the code will override all other declarations and will be applied.
+    * The last declaration in the code will override all other declarations and will be applied.
