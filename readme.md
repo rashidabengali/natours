@@ -42,3 +42,37 @@ The parsing of CSS is a bit complex. Follows two main steps:
 The final CSS is also stored in a tree-like structure known as CSS Object Model (CSSOM) like DOM. In order to have html and css parsed ans stored. In order to render page, the browser uses the **visual formatiing model** like box-model (floats, positioning).
 
 Finally, the visual formatting model has done its work, the website is finally rendered.
+
+#### CSS Rule
+- Selector and a declaration block
+- Declaration block consits of property and its value
+
+#### The Cascade (The C in CSS)
+- Cascade is the process of combining different stylesheets and resolving conflicts between different CSS rules and declarations, when more than one rule applies to a certain element. (like font-size property can appear in several stylesheets plus several times in one single stylesheet)
+
+- CSS can come from different sources, the most common is the one we developers write that's **AUTHOR** declarations
+- USER decalrations (if the user changes thes the defauly font-size of the browser)
+- BROWSER (user Agent) Declarations (the default which is not set by the author like anchor tags will show blue by dfault)
+
+Thus the cascade combines all the CSS declarations coming from different sources
+
+#### How the Cascade resolves confilct when more than one rule applies
+- Importance (weight)
+
+* `!important` keyword overwrites (User)
+* `!important` keyword overwrites (Author)
+* Author declarations
+* User declarations
+* Default browser declarations
+
+- Specificity (thus deciding which one takes presidence)
+
+* Inline styles
+* IDs
+* Classes, pseudo-classes, attribute
+* Elements, pseudo-elements
+
+![specificity example](./img/css.png)
+
+- Source Order
+- The last declaration in the code will override all other declarations and will be applied.

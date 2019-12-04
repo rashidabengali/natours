@@ -181,6 +181,6 @@ body { /* power of inheritance */
 
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: backwards; */
   /* automatically applies to 0% before the animation starts */
-}
+} 
