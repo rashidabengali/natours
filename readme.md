@@ -77,4 +77,4 @@ Thus the cascade combines all the CSS declarations coming from different sources
 - Source Order
     * The last declaration in the code will override all other declarations and will be applied.
     * Rely more on **specificity** than on the **order** of selectors (best practice, easy to rearrange)
-    * However, when using extenal third party style sheets, so put the author stle sheet at the last in the html
+    * However, when using extenal third party style sheets, so put the author stle sheet at the last in the html  
