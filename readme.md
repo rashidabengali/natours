@@ -59,7 +59,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 #### How the Cascade resolves confilct when more than one rule applies
 - Importance (weight)
 
-    * `!important` keyword overwrites (User)
+    * `!important` keyword overwrites (User) (have the highest priority but should be used as the last resource, it's better to figure out specificity to make the code more maintainable)
     * `!important` keyword overwrites (Author)
     * Author declarations
     * User declarations
@@ -67,7 +67,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
 - Specificity (thus deciding which one takes presidence)
 
-    * Inline styles
+    * Inline styles 
     * IDs
     * Classes, pseudo-classes, attribute
     * Elements, pseudo-elements
@@ -76,3 +76,5 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
 - Source Order
     * The last declaration in the code will override all other declarations and will be applied.
+    * Rely more on **specificity** than on the **order** of selectors (best practice, easy to rearrange)
+    * However, when using extenal third party style sheets, so put the author stle sheet at the last in the html
