@@ -78,3 +78,43 @@ Thus the cascade combines all the CSS declarations coming from different sources
     * The last declaration in the code will override all other declarations and will be applied.
     * Rely more on **specificity** than on the **order** of selectors (best practice, easy to rearrange)
     * However, when using extenal third party style sheets, so put the author stle sheet at the last in the html  
+
+### How CSS is Parsed (Value Processing)
+
+**How CSS Values are Processed**
+ 
+ - `rem` is a relative unit which is always relative to the root font-size which is `16px` by default 
+
+ **Inheritance**
+
+ - The child element inherits the style properties from the parent element
+
+ ![cascading values](./img/cascade.png)
+
+ - Using `em` and `rem` results in more robust responsive layouts
+
+ - `vh` is 1% of viewport height
+ - `vw` is 1% of viewport width
+
+ ![cascading values](./img/values.png)
+
+ - Each property has an initial value, if nothing is declared
+ - Browsers specify a **root font-size** for each page (usually 16px)
+ - Percentage and relative values are always converted to pixels 
+
+  ### Inheritance
+
+  Inheritance is a way of  propagating property values from parents elements to children (More maintainable code)
+
+  - Each and every CSS property must have a CSS value
+  - If there's a cascaded value, then the specified value equals the cascaded value
+  - If not then whether or not the property can be inherited, if yes then the specified value of that property equals the computed value of the parent element
+  - Remember it's computed value not the actual value
+
+  ![inheritance](./img/inheritance.png)
+
+  - Properties related to text are usually inherited such as `font-family` `font-size` `color` not like `padding` `margin`
+
+  - The `inherit` keyword forces inheritance on a certain property
+
+  - The `initial` keyword resets a property to its initial value
