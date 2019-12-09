@@ -163,3 +163,58 @@ Thus the cascade combines all the CSS declarations coming from different sources
 ![sass](./img/sass-2.png)
 
 ![sass](./img/sass-3.png)
+
+**Note** When you apply float to elements, it loses its height
+
+Codepen: https://codepen.io/anon/pen/eGZKyY?editors=1100
+
+```html
+<nav>
+  <ul class="navigation">
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="buttons">
+    <a class="btn-main" href="#">Sign up</a>
+    <a class="btn-hot" href="#">Get a quote</a>
+  </div>
+</nav>
+```
+
+```css
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*OR*/
+
+  nav {
+      margin: 30px;
+      background: blue;
+
+      &::after {
+        content: "";
+        clear: both;
+        display: table;  
+      }
+  }
+  ```
+
+- `%btn-placeholder` is for placeholder
+- `@extend btn-placeholder` to apply in cs property
+- `@mixin mixin-name(args)` for mixins
+- `@include mixin-name` to include in a css property
+
+![Node JS](./img/node.png)
+
+### Install Sass
+
+- `node -v`
+- `npm init -y`
+- `npm install node-sass --save-dev`
+- `npm install jquery --save` incase to uninstall
+
+Difference between dependencies and dev dependencies?

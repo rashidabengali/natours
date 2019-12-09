@@ -1,0 +1,196 @@
+/* COLOURS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485 */
+
+*,
+**::after, /* to add to all after and before pseudo-classes */
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*(removing it form here to use power of inheritance, moving it to the body) it changes the box model so that the borders and the paddings are no longer added to the total width and total height that we specify for the box */
+}
+
+html {
+  /*root font size i set in the the root html */
+  font-size: 62.5%; /*  (10/16) % --- 1 rem will become now 10px as 1 rem is always the *times the root font-size) and change it % later for better user experience. 100% means root will be 16px if user doesnt change anything*/
+  /* rem not supported below ie 9 */
+}
+
+body { /* power of inheritance */
+  font-family: "Lato", sans-serif; /* this font family will get inherited to all the child elements of the body */
+  font-weight: 400;
+  /*font-size: 16px; will change later for the better technique */
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; /*(30px / 10)*/
+  box-sizing: border-box; /* inheriting from universal selector */
+}
+
+.header {
+  height: 95vh; /* 95% of the view port height */
+  background: linear-gradient(
+    to right bottom,
+    rgba(126, 218, 111, 0.8),
+    rgba(10, 180, 131, 0.8)),
+    url(../img/hero.jpg);
+  background-size: cover; /* cover tries to fir the vh of the box */
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  /* determines if the backpart of an element is vsible or hidden for the userr */
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: 3; */
+  animation-timing-function: ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem) rotate(0deg);
+  }
+
+  /* 60% {
+    transform: rotate(180deg);
+  } */
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  /* here link is pseudo class like a special state in the selector for anchor element*/
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px;);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+}
+
+.btn--white {
+  background: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  /* after pseudo elemnt is treated like a child of the button */
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  transition: all 0.4s;
+}
+
+.btn--white::after {
+  background: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; */
+  /* automatically applies to 0% before the animation starts */
+} 
