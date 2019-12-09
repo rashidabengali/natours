@@ -4,6 +4,10 @@ Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485 */
 
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
 *,
 **::after, /* to add to all after and before pseudo-classes */
 *::before {
@@ -32,8 +36,8 @@ body { /* power of inheritance */
   height: 95vh; /* 95% of the view port height */
   background: linear-gradient(
     to right bottom,
-    rgba(126, 218, 111, 0.8),
-    rgba(10, 180, 131, 0.8)),
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)),
     url(../img/hero.jpg);
   background-size: cover; /* cover tries to fir the vh of the box */
   background-position: top;
@@ -156,7 +160,7 @@ body { /* power of inheritance */
 }
 
 .btn:active {
-  transform: translateY(-1px;);
+  transform: translateY(-1px);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
@@ -184,13 +188,12 @@ body { /* power of inheritance */
   background: #fff;
 }
 
+.btn--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;  /* automatically applies to 0% before the animation starts */ 
+}
+
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards; */
-  /* automatically applies to 0% before the animation starts */
-} 
