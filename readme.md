@@ -108,7 +108,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
   - Each and every CSS property must have a CSS value
   - If there's a cascaded value, then the specified value equals the cascaded value
-  - If not then whether or not the property can be inherited, if yes then the specified value of that property equals the computed value of the parent element
+  - If not then whether or not the property can be inherited, if yes then the specified value of that propervty equals the computed value of the parent element
   - Remember it's computed value not the actual value
 
   ![inheritance](./img/inheritance.png)
@@ -119,4 +119,28 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
   - The `initial` keyword resets a property to its initial value
 
-### Why `rem` over `px`? 
+#### Why `rem` over `px`? 
+
+### CSS Visual Formatting Model
+
+- Box Model
+
+![CSS Visual Model](./img/visual.png)
+
+![CSS Box Model](./img/box-model.png)
+
+- Box Sizing
+
+![CSS Box Sizing](./img/box-sizing.png)
+
+- Types of Bozxes
+
+![CSS Box Types](./img/box-types.png)
+
+- Box Positioning
+
+![CSS Box Positioning](./img/box-position.png)
+
+- Stacking Contexts
+
+![Stacking Contexts](./img/stacking.png)
