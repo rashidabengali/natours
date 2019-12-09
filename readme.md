@@ -2,11 +2,11 @@
 
 ### There are three pillars to write good HTML and CSS
 - Responsive design
- * Fluid Layouts
- * Media Queries
- * Responsive images
- * Correct units
- * Desktop-first vs mobile-first
+    * Fluid Layouts
+    * Media Queries
+    * Responsive images
+    * Correct units
+    * Desktop-first vs mobile-first
 
 - Maintainable and Scalable code
   * Clean
@@ -28,7 +28,7 @@
 
 ### What Happens to CSS when we load a Webpage
 
-When the browser loads a HTML file, it then takes then loaded html code and parses it which means it decodes it line by line. From this process, the browser builds DOM which describes the entire web document like a family tree with parents and children and sibling elements. This DOM is where the entire decoded HTMl code is stored.
+When the browser loads a HTML file, it then takes then loaded html code and parses it which means it decodes it line by line. From this process, the browser builds DOM which describes the entire web document like a family tree with parents and children and sibling elements. This DOM is where the entire decoded HTML code is stored.
 
 When the browser parses html, it also finds the stylesheets included in the html head and starts loading them and hence css is parsed.
 
@@ -52,7 +52,7 @@ Finally, the visual formatting model has done its work, the website is finally r
 
 - CSS can come from different sources, the most common is the one we developers write that's **AUTHOR** declarations
 - USER decalrations (if the user changes thes the defauly font-size of the browser)
-- BROWSER (user Agent) Declarations (the default which is not set by the author like anchor tags will show blue by dfault)
+- BROWSER (user Agent) Declarations (the default which is not set by the author like anchor tags will show blue by default)
 
 Thus the cascade combines all the CSS declarations coming from different sources
 
@@ -118,3 +118,5 @@ Thus the cascade combines all the CSS declarations coming from different sources
   - The `inherit` keyword forces inheritance on a certain property
 
   - The `initial` keyword resets a property to its initial value
+
+### Why `rem` over `px`? 
