@@ -144,3 +144,14 @@ Thus the cascade combines all the CSS declarations coming from different sources
 - Stacking Contexts
 
 ![Stacking Contexts](./img/stacking.png)
+
+### CSS Architecture , Components and BEM
+
+![CSS Think Layout](./img/layout.png)
+
+
+![CSS Build Pattern](./img/architecture.png)
+
+![BEM](./img/BEM.png)
+
+![Structure](./img/structure.png)
