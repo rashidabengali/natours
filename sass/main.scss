@@ -8,6 +8,9 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-grey-dark: #777;
+$color-white: #fff;
+
 *,
 **::after, /* to add to all after and before pseudo-classes */
 *::before {
@@ -27,7 +30,7 @@ body { /* power of inheritance */
   font-weight: 400;
   /*font-size: 16px; will change later for the better technique */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem; /*(30px / 10)*/
   box-sizing: border-box; /* inheriting from universal selector */
 }
@@ -64,7 +67,7 @@ body { /* power of inheritance */
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
 
   backface-visibility: hidden;
@@ -165,8 +168,8 @@ body { /* power of inheritance */
 }
 
 .btn--white {
-  background: #fff;
-  color: #777;
+  background: $color-white;
+  color: $color-grey-dark;
 }
 
 .btn::after {
@@ -185,7 +188,7 @@ body { /* power of inheritance */
 }
 
 .btn--white::after {
-  background: #fff;
+  background: $color-white;
 }
 
 .btn--animated {

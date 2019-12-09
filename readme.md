@@ -219,3 +219,22 @@ Codepen: https://codepen.io/anon/pen/eGZKyY?editors=1100
 
 Difference between dependencies and dev dependencies?
 
+### Compile SASS
+- Make changes to the scripts in package.json file
+```
+"scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  ```
+  - Run the following command on the Terminal `npm run compile:sass`
+  - In order to avoid rrunning the command everytime we make changes in the sass file, we can add `watch` to `package.json`
+  ```
+"scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  ```
+
+#### Install live-server
+
+- `npm install live-server -g` OR `sudo npm install live-server -g`
+- `live-server` TADA!!
