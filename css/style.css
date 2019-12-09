@@ -41,17 +41,17 @@ body { /* power of inheritance */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -68,7 +68,7 @@ body { /* power of inheritance */
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -80,7 +80,7 @@ body { /* power of inheritance */
   /* animation-iteration-count: 3; */
   animation-timing-function: ease-out;
 }
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -160,7 +160,7 @@ body { /* power of inheritance */
   box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
-.btn-white {
+.btn--white {
   background: #fff;
   color: #777;
 }
@@ -180,7 +180,7 @@ body { /* power of inheritance */
   transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background: #fff;
 }
 
@@ -189,7 +189,7 @@ body { /* power of inheritance */
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; */
   /* automatically applies to 0% before the animation starts */

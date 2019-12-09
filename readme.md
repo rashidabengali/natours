@@ -142,7 +142,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 ![CSS Box Positioning](./img/box-position.png)
 
 - Stacking Contexts
-
+![BEM](./img/BEM.png)
 ![Stacking Contexts](./img/stacking.png)
 
 ### CSS Architecture , Components and BEM
@@ -155,3 +155,11 @@ Thus the cascade combines all the CSS declarations coming from different sources
 ![BEM](./img/BEM.png)
 
 ![Structure](./img/structure.png)
+
+### SASS
+
+![sass](./img/sass-1.png)
+
+![sass](./img/sass-2.png)
+
+![sass](./img/sass-3.png)
