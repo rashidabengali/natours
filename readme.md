@@ -238,3 +238,8 @@ Difference between dependencies and dev dependencies?
 
 - `npm install live-server -g` OR `sudo npm install live-server -g`
 - `live-server` TADA!!
+- No re-loading required
+
+### Pseudo Elements
+
+![Pseudo Elements](./img/psuedo.png)
