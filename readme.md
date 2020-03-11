@@ -253,6 +253,14 @@ Difference between dependencies and dev dependencies?
 
 ### Review: Basic Principles of Responsive Design and Layout Types
 
-![Review](./img/review 1.png)
+![Review](./img/review-1.png)
 
-![Review](./img/review 2.png)
+![Review](./img/review-2.png)
+
+### Grid 
+
+A grid is a design system that allows us to build consistent interfaces.
+
+HTML Symbols: codingheroes.io/resources
+
+Icons: linea.io
