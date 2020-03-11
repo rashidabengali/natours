@@ -1,0 +1,18 @@
+*,
+**::after, /* to add to all after and before pseudo-classes */
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*(removing it form here to use power of inheritance, moving it to the body) it changes the box model so that the borders and the paddings are no longer added to the total width and total height that we specify for the box */
+}
+
+html {
+  // this defines what 1rem is
+  /*root font size i set in the the root html */
+  font-size: 62.5%; /*  (10/16) % --- 1 rem will become now 10px as 1 rem is always the *times the root font-size) and change it % later for better user experience. 100% means root will be 16px if user doesnt change anything*/
+  /* rem not supported below ie 9 */
+}
+
+body { /* power of inheritance */
+  box-sizing: border-box; /* inheriting from universal selector */
+}

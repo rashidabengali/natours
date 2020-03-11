@@ -243,3 +243,16 @@ Difference between dependencies and dev dependencies?
 ### Pseudo Elements
 
 ![Pseudo Elements](./img/psuedo.png)
+
+#### Additional notes
+
+- SASS works with hex and variables values in rgba property unlike regular css
+
+- 7-1 CSS Architecture
+  * This architecture is designed for a multi-page project
+
+### Review: Basic Principles of Responsive Design and Layout Types
+
+![Review](./img/review 1.png)
+
+![Review](./img/review 2.png)
