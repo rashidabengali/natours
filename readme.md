@@ -264,3 +264,5 @@ A grid is a design system that allows us to build consistent interfaces.
 HTML Symbols: codingheroes.io/resources
 
 Icons: linea.io
+
+Images: unsplash.com (explore for free images)
