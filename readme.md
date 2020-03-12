@@ -266,3 +266,5 @@ HTML Symbols: codingheroes.io/resources
 Icons: linea.io
 
 Images: unsplash.com (explore for free images)
+
+Videos: coverr.co
