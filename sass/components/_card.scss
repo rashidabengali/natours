@@ -13,7 +13,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
-        overflow: hidden;
+        overflow: hidden; // if this isn't specified then the borde rradius will not show, it will pointed corners instead
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
         &--front {
@@ -51,25 +51,25 @@
         background-blend-mode: screen;
         -webkitclip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
+        border-top-left-radius: 3px; //needed to specify or rounded corners were n't showing
         border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
             url(../img/nat-5.jpg);
-     
+
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
             url(../img/nat-6.jpg);
-            
+
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
             url(../img/nat-7.jpg);
-            
+
         }
     }
 
@@ -148,12 +148,12 @@
 
     &__price-only {
         font-size: 1.4rem;
-       text-transform: uppercase; 
+       text-transform: uppercase;
     }
 
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
     }
-    
+
 }

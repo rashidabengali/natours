@@ -67,7 +67,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
 - Specificity (thus deciding which one takes presidence)
 
-    * Inline styles 
+    * Inline styles
     * IDs
     * Classes, pseudo-classes, attribute
     * Elements, pseudo-elements
@@ -82,8 +82,8 @@ Thus the cascade combines all the CSS declarations coming from different sources
 ### How CSS is Parsed (Value Processing)
 
 **How CSS Values are Processed**
- 
- - `rem` is a relative unit which is always relative to the root font-size which is `16px` by default 
+
+ - `rem` is a relative unit which is always relative to the root font-size which is `16px` by default
 
  **Inheritance**
 
@@ -100,7 +100,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
  - Each property has an initial value, if nothing is declared
  - Browsers specify a **root font-size** for each page (usually 16px)
- - Percentage and relative values are always converted to pixels 
+ - Percentage and relative values are always converted to pixels
 
   ### Inheritance
 
@@ -119,7 +119,7 @@ Thus the cascade combines all the CSS declarations coming from different sources
 
   - The `initial` keyword resets a property to its initial value
 
-#### Why `rem` over `px`? 
+#### Why `rem` over `px`?
 
 ### CSS Visual Formatting Model
 
@@ -257,7 +257,7 @@ Difference between dependencies and dev dependencies?
 
 ![Review](./img/review-2.png)
 
-### Grid 
+### Grid
 
 A grid is a design system that allows us to build consistent interfaces.
 
@@ -268,3 +268,5 @@ Icons: linea.io
 Images: unsplash.com (explore for free images)
 
 Videos: coverr.co
+
+easings.net
