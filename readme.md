@@ -227,7 +227,7 @@ Difference between dependencies and dev dependencies?
   },
   ```
   - Run the following command on the Terminal `npm run compile:sass`
-  - In order to avoid rrunning the command everytime we make changes in the sass file, we can add `watch` to `package.json`
+  - In order to avoid running the command everytime we make changes in the sass file, we can add `watch` to `package.json`
   ```
 "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
